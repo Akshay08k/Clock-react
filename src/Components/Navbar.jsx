@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
-    return (
-        <div className="navbar">
-            <nav>
-                <Link to="/current-time"><li>Current Time</li></Link>
-                <Link to="/alarm"><li>Alarm</li></Link>
-                <Link to="/stopwatch"><li>Stopwatch</li></Link>
-                <Link to="/world-times"><li>World Times</li></Link>
-            </nav>
-        </div>
-    );
-};
+function Navbar() {
+  return (
+    <nav>
+      <ul>
+        <li><Link to="/current-time">Current Time</Link></li>
+        <li><Link to="/stopwatch">Stopwatch</Link></li>
+        <li><Link to="/alarm">Alarm</Link></li>
+        <li><Link to="/world-times">World Clock</Link></li>
+      </ul>
+    </nav>
+  );
+}
 
 export default Navbar;
